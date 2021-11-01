@@ -17,6 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate username
     if(empty(trim($_POST["email"]))){
         $email_err = "Please enter a Email.";
+        header("location: mailing");
     } else{
         // Prepare a select statement
         $sql = "SELECT user_id FROM users WHERE user_email = ?";
@@ -45,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         $param_email = trim($_POST["email"]);
                             if(mysqli_stmt_execute($stmt)){
                                 mysqli_stmt_store_result($stmt);
-                                header("location: thanks.php");
+                                header("location: thanks");
                             } else{
                                 echo("beeg error");
                             }
@@ -89,7 +90,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 print($param_email);
                 print("<p>param_meme: </p>");
                 print($param_meme);
-                header("location: thanks.php");
+                header("location: thanks");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
