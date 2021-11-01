@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ThatGuyJack - WebDev - Login</title>
-  <link rel="icon" href="https://thatguyjack.co.uk/webdev/img/logo.png"></link>
-<meta name="description" content="ThatGuyJack - Webdev - Login">
-<meta name="icon" content="https://thatguyjack.co.uk/webdev/img/logo.png"> 
-<meta property="og:title" content="ThatGuyJack">
-<meta property="og:description" content="ThatGuyJack - Webdev - Login">
-<meta property="og:image" content="https://thatguyjack.co.uk/webdev/img/logo.png">
-<meta name="keywords" content="ThatGuyJack">
+<title>HotBeans Development</title>
+  <link rel="icon" href="https://hotbeans.net/img/logo.png"></link>
+<meta name="description" content="HotBeans Development">
+<meta name="icon" content="https://hotbeans.net/img/logo.png"> 
+<meta property="og:title" content="HotBeans Development">
+<meta property="og:description" content="HotBeans Development">
+<meta property="og:image" content="https://hotbeans.net/img/logo.png">
+<meta name="keywords" content="HotBeans Development">
 <link type="text/plain" rel="author" href="https://thatguyjack.co.uk/humans.txt" /> 
-<link rel="stylesheet" href="../css/style.css"/>
-<script type="text/javascript" src="https://thatguyjack.co.uk/js/tsparticles.min.js"></script>
+<link rel="stylesheet" href="https://hotbeans.net/css/style.css"/>
+<script type="text/javascript" src="https://hotbeans.net/js/tsparticles.min.js"></script>
 
 </head>
 <body>
 <div class="nav">
-    <img class="nav-logo" src="https://thatguyjack.co.uk/webdev/img/logo.svg"></img>
+    <img class="nav-logo" src="https://hotbeans.net/img/logo.svg"></img>
     <a href="../">Home</a>
     <a href="../mailing">Mailing</a>
     <a class="nav-login" href="../login">Login/Register</a>
@@ -27,9 +27,9 @@
       </div>
   </div>
   <div id="background"></div>
-  <script src="https://thatguyjack.co.uk/js/app.js"></script> 
+  <script src="https://hotbeans.net/js/app.js"></script> 
   <script>
-            tsParticles.loadJSON("background", "https://thatguyjack.co.uk/webdev/assets/particles.json").then(function (container) {
+            tsParticles.loadJSON("background", "https://hotbeans.net/assets/particles.json").then(function (container) {
                 container.start;
             });
         </script> 
