@@ -1,5 +1,5 @@
 # WebDev
-<h2>Jacks WebDev Project For IT BTEC at ASFC</h2>
+Jacks WebDev Project For IT BTEC at ASFC
 
 Currently hosted at https://thatguyjack.co.uk/webdev/
 
