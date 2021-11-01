@@ -1,11 +1,12 @@
 # WebDev
-Jacks WebDev Project For IT BTEC at ASFC
+<h1>Jacks WebDev Project For IT BTEC at ASFC</h1>
 
 Currently hosted at https://thatguyjack.co.uk/webdev/
 
 
 
 <h2>Needed things according to the assignment brief: </h2>
+
 ●	A profile of the company itself
 
 ●	profiles of existing trainee web developers
@@ -17,6 +18,7 @@ Currently hosted at https://thatguyjack.co.uk/webdev/
 ●	links to web development courses
 
 <h2> Things the Site will be assessed on: </h2>
+
 ●	Designs for the web site
 
 ●	Justifications of the design decisions
