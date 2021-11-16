@@ -1,7 +1,7 @@
 # WebDev
 Jacks WebDev Project For IT BTEC at ASFC
 
-Currently hosted at https://thatguyjack.co.uk/webdev/
+Currently hosted at https://hotbeans.net
 
 
 
