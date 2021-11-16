@@ -3,10 +3,10 @@ ini_set('display_errors', 'On');
 ini_set('html_errors', 0);
 
 // Include config file
-require_once "config.php";
+require_once "./config.php";
 print_r($_POST);
 // Define variables and initialize with empty values
-$email = "";
+$email = $_POST["email"];
 $email_err = "";
 print("<p>start email: </P>");
 print($email);
@@ -17,19 +17,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate username
     if(empty(trim($_POST["email"]))){
         $email_err = "Please enter a Email.";
-        header("location: mailing");
+        header("location: contact-us");
     } else{
         // Prepare a select statement
-        $sql = "SELECT user_id FROM users WHERE user_email = ?";
+        $sql = "SELECT user_id FROM contact WHERE user_email = ?";
         print("<p>else email: </p>");
+        echo("$sql <br>");
         print($email);
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_email);
             // Set parameters
-            $param_email = trim($_POST["email"]);
+            $param_email = $_POST["email"];
             print("<p>in else email: </p>");
             print($email);
+            echo("<br>parama $param_email");
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 /* store result */
@@ -38,12 +40,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     $email_err = "This Email is already taken.";
                     echo("<p>email Taken</p>");
-                    $sql = "UPDATE users SET `need_meme` = '1' WHERE (`user_email` =  ?)";
+                    $sql = "UPDATE contact SET `send_email` = '1' WHERE (`user_email` =  ?)";
+                    echo("<br> aaaa $sql");
                     if($stmt = mysqli_prepare($link, $sql)){
                         echo("<p>SQL</p>");
                         echo($sql);
                         mysqli_stmt_bind_param($stmt, "s", $param_email);
-                        $param_email = trim($_POST["email"]);
+                        $param_email = $email;
+                        echo("<br> aaaa $sql");
                             if(mysqli_stmt_execute($stmt)){
                                 mysqli_stmt_store_result($stmt);
                                 header("location: thanks");
@@ -67,16 +71,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($email_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO users (user_email, need_meme) VALUES (?, ?)";
+        $sql = "INSERT INTO users (user_email, send_email) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
             $param_email = $email;
-            $param_meme = "1";
+            $param_semail = "1";
             print("<p>param email: </p>");
             print($param_email);
 
-            mysqli_stmt_bind_param($stmt, "ss", $param_email, $param_meme);
+            mysqli_stmt_bind_param($stmt, "ss", $param_email, $param_semail);
             // Set parameters
 
             
@@ -88,8 +92,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 print($email);
                 print("<p>param_email:  </p>");
                 print($param_email);
-                print("<p>param_meme: </p>");
-                print($param_meme);
+                print("<p>param_semail: </p>");
+                print($param_semail);
                 header("location: thanks");
             } else{
                 echo "Oops! Something went wrong. Please try again later.";

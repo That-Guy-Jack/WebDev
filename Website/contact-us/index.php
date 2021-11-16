@@ -25,17 +25,13 @@
 
 </head>
 <body>
-<div class="nav">
-    <img class="nav-logo" src="https://hotbeans.net/img/logo.svg"></img>
-    <a href="../">Home</a>
-    <a href="../mailing">Mailing</a>
-    <a class="nav-login" href="../login">Login/Register</a>
-  </div>
+<div data-typesettings>
+		<?php require_once "../nav.php";?>
   <div class="content">
       <div class="header">
         <h1> Welcome to the Mailing List!</h1>
 
-        <p>Please note this is still under developement!</p>
+        <p>Place your email below to get up to date infomation about our developers!  </p>
       </div>
         <form action="../mail.php" method="post">
             <div class="form-group">
@@ -46,6 +42,7 @@
                 <input style="padding:15px 20px;font-size: 17px;margin:3px" class="content-button" type="submit" value="Submit" style="padding:15px 20px;font-size: 17px;margin:3px" class="content-button">
             </div>
         </form>
+  </div>
   </div>
   <div id="background"></div>
   <script src="https://hotbeans.net/js/app.js"></script> 

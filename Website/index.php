@@ -10,22 +10,20 @@
 <meta property="og:image" content="https://hotbeans.net/img/logo.png">
 <meta name="keywords" content="HotBeans Development">
 <link type="text/plain" rel="author" href="https://thatguyjack.co.uk/humans.txt" /> 
-<link rel="stylesheet" href="./css/style.css"/>
+<link rel="stylesheet" href="https://hotbeans.net/css/style.css"/>
+<link rel="stylesheet" media="screen and (max-width: 900px)" href="https://hotbeans.net/css/800style.css" />
 <script type="text/javascript" src="https://hotbeans.net/js/tsparticles.min.js"></script>
 </head>
 <body>
-<div class="nav">
-    <img class="nav-logo" src="https://hotbeans.net/img/logo.svg"></img>
-    <a href="../">Home</a>
-    <a href="../mailing">Mailing</a>
-    <a class="nav-login" href="../login">Login/Register</a>
-  </div>
+<div data-typesettings>
+		<?php require_once "./nav.php";?>
   <div class="content">
       <div class="header">
         <h1> Welcome to HotBeans Development!</h1>
         <p>Check Out Some Courses!</p>
       </div>
   </div>
+</div>
   <div id="background"></div>
   <script src="https://hotbeans.net/js/app.js"></script> 
   <script>
