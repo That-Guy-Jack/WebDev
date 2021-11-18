@@ -62,7 +62,7 @@ $result = $conn->query($sql);
 		<?php require_once "../nav.php";?>
 		<div class="content">
 			<div class="content-header">
-                	<h1 class="main-header">Meat the HotBeans Developers!</h1>
+                	<h1 class="main-header">Meet the HotBeans Developers!</h1>
             	    <p class="header-footer">Take a look at what our developers are like!</p>
         	</div>
 		<?php

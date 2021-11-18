@@ -22,6 +22,7 @@ if (is_mobile()) {
 			<div class="mnav">
 			<img class="nav-logo" src="https://hotbeans.net/img/logo.svg"></img>
 			<a href="https://hotbeans.net/">Home</a>
+			<a href="https://hotbeans.net/who">Who we are</a>
 			<a href="https://hotbeans.net/portfolios">Portfolios</a>
 			<a href="https://hotbeans.net/contact-us">Contact Us</a>
 			<a class="nav-login" href="https://hotbeans.net/account">Login/Register</a>
@@ -31,6 +32,7 @@ if (is_mobile()) {
 			<div class="nav">
 			<img class="nav-logo" src="https://hotbeans.net/img/logo.svg"></img>
 			<a href="https://hotbeans.net/">Home</a>
+			<a href="https://hotbeans.net/who">Who we are</a>
 			<a href="https://hotbeans.net/portfolios">Portfolios</a>
 			<a href="https://hotbeans.net/contact-us">Contact Us</a>
 			<a class="nav-login" href="https://hotbeans.net/account">Login/Register</a>

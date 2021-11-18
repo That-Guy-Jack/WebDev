@@ -6,7 +6,7 @@ ini_set('html_errors', 0);
 require_once "./config.php";
 print_r($_POST);
 // Define variables and initialize with empty values
-$email = $_POST["email"];
+$email = trim($_POST["email"]);
 $email_err = "";
 print("<p>start email: </P>");
 print($email);
@@ -71,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($email_err)){
         
         // Prepare an insert statement
-        $sql = "INSERT INTO users (user_email, send_email) VALUES (?, ?)";
+        $sql = "INSERT INTO contact (user_email, send_email) VALUES (?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters

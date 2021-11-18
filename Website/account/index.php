@@ -73,7 +73,7 @@ $result = $link->query($asql);
 							echo '<textarea name="body" rows="7" placeholder="Enter the post" style="padding:15px 20px;font-size: 17px;margin:3px" class="content-box" >'. $row["p_content"] .'</textarea>';
 							echo '</label>';
 							echo '<br>';
-							echo '<input style="padding:15px 20px;font-size: 17px;margin:3px " type="submit" value="Submit" class="content-button">';
+							echo '<input style="padding:15px 20px;font-size: 17px;margin:3px " type="submit" value="Save" class="content-button">';
 							echo '</form>';
 						}
 					}elseif ($result->num_rows < 0){

@@ -156,7 +156,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="content-button" value="Submit">
             </div>
-            <p>Already have an account? <a href="login.php" class="content-button">Login here</a>.</p>
+            <p>Already have an account? <a href="login.php" class="content-button">Login here</a></p>
         </form>
     </div>    
 

@@ -8,11 +8,11 @@ let transporter = nodemailer.createTransport({
     secure: false, // use TLS
     auth: {
       user: "Jack@thatguyjack.co.uk",
-      pass: "(<password>)",
+      pass: "Jack32145@",
     },
   });
   
-var prefix = "/home/jack/webdev-email-v2/"
+var prefix = "/home/ubuntu/webdev-email-v2/"
   
 var readHTMLFile = function(path, callback) {
     fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
@@ -35,10 +35,10 @@ var mailOptions = {
 var mysql = require('mysql');
 //const distance = require('distance.js');
 var con = mysql.createConnection({
-  	host: "192.168.5.16",
-  	user: "meme",
-	password: "Meme32145",
-	database: "mememail_db"
+  	host: "db.thatguyjack.co.uk",
+  	user: "webdev",
+	password: "webdev32145",
+	database: "webdev_db"
 });
 
 con.connect(function(err) {
@@ -48,21 +48,21 @@ con.connect(function(err) {
 });
 var count = 0;
 
-var memeURL = new Array()
+var mURL = new Array()
 
 fs.readFile(prefix+'memes.txt', function(err, data) {
     if(err) throw err;
-    memeURL = data.toString().split("\n");
-    for(i in memeURL) {
-        console.log(memeURL[i]);
+    mURL = data.toString().split("\n");
+    for(i in mURL) {
+        console.log(mURL[i]);
     }
 });
 
 
-console.log(memeURL);
+console.log(mURL);
 
 function check(){
-    query = "SELECT user_email FROM users WHERE need_meme = '1'";
+    query = "SELECT user_email FROM contact WHERE send_email = '1'";
     con.query(query, function(error,results,fields){
         if(error) throw error;
         //console.log(results);
@@ -70,14 +70,14 @@ function check(){
         results.forEach(row => {
             newID = true;
 
-            con.query("UPDATE users SET `need_meme` = '0' WHERE (`user_email` = '" + row["user_email"] + "');"  , function(error,results,fields){
+            con.query("UPDATE contact SET `send_email` = '0' WHERE (`user_email` = '" + row["user_email"] + "');"  , function(error,results,fields){
                 if(error) throw error;
             });
             console.log("BD updated")
             if(newID == true){
 
                     var htmlToSend;
-                    var randURL = memeURL[Math.floor(Math.random() * memeURL.length)];
+                    var randURL = mURL[Math.floor(Math.random() * mURL.length)];
                     readHTMLFile(prefix+"email.html",function(err,html){
                         //console.log(html)
                         console.log(randURL)
