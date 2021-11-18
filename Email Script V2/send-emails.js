@@ -48,7 +48,7 @@ con.connect(function(err) {
 });
 var count = 0;
 
-var mURL = new Array()
+/*var mURL = new Array()
 
 fs.readFile(prefix+'memes.txt', function(err, data) {
     if(err) throw err;
@@ -57,9 +57,9 @@ fs.readFile(prefix+'memes.txt', function(err, data) {
         console.log(mURL[i]);
     }
 });
+*/
 
-
-console.log(mURL);
+//console.log(mURL);
 
 function check(){
     query = "SELECT user_email FROM contact WHERE send_email = '1'";
@@ -77,25 +77,24 @@ function check(){
             if(newID == true){
 
                     var htmlToSend;
-                    var randURL = mURL[Math.floor(Math.random() * mURL.length)];
                     readHTMLFile(prefix+"email.html",function(err,html){
                         //console.log(html)
-                        console.log(randURL)
+                        //console.log(randURL)
                         var template = handlebars.compile(html);
                         var replacements = {
-                            htmlURL: randURL,
+                            htmlURL: "https://hotbeans.net",
                         };
 
 
                         htmlToSend = template(replacements);
                         var mailOptions = {
-                            from: 'no-reply@thatguyjack.co.uk',
+                            from: 'hotbeans-net-no-reply@thatguyjack.co.uk',
                             to: row["user_email"],
-                            subject: 'Enjoy Your Random Meme!',
+                            subject: 'HotBeans.net! Welcome Email!',
                             html: htmlToSend
                         };
                         //console.log(htmlToSend)
-                        console.log("Job Finished! - " + row["user_email"] + " " + randURL);
+                        console.log("Job Finished! - " + row["user_email"]);
                         //console.log(mailOptions)
                         //console.log(replacements);
                         SendMail(mailOptions,results);
