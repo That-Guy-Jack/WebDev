@@ -13,6 +13,15 @@
 <link rel="stylesheet" href="https://hotbeans.net/css/style.css"/>
 <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://hotbeans.net/css/800style.css" />
 <script type="text/javascript" src="https://hotbeans.net/js/tsparticles.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KWVBJ3WXF1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KWVBJ3WXF1');
+</script>
 </head>
 <body>
 <div data-typesettings>
