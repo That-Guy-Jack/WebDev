@@ -68,7 +68,7 @@ img {
     transition-duration: 0.2s;
     color: black;
     border:2px solid black;
-    padding: 7px 7px;
+    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -76,18 +76,23 @@ img {
     margin-left:2px;
     margin-right: 2px;
     cursor:pointer;
-}
+  }  
 
 .mnav a:hover{
     transition-duration: 0.2s;
     transform: scale(1.1);
     background-color: black;
-    color:#D5AB2D;
+    color:#ffffff;
     border: 2px solid black;
 }
 .mnav a:active{
     transform: translatey(0px);
     color:white;
+}
+
+.mnav .nav-logo{
+    float:left;
+    width:70px;
 }
 
 .content{

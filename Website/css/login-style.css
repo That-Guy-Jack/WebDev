@@ -163,7 +163,7 @@ video {
     transition-duration: 0.2s;
     transform: scale(1.1);
     background-color: black;
-    color:#D5AB2D;
+    color:#ffffff;
     border: 2px solid black;
 }
 .mnav a:active{

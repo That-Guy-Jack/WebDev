@@ -37,6 +37,7 @@ $result = $conn->query($sql);
 		<meta property="og:image" content="https://hotbeans.net/img/logo.png">
 		<meta name="keywords" content="HotBeans Development">
 		<link type="text/plain" rel="author" href="https://thatguyjack.co.uk/humans.txt" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="text/javascript" src="https://hotbeans.net/js/tsparticles.min.js"></script>
 		<style>
         .content-button{

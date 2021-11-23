@@ -12,6 +12,7 @@
 <link type="text/plain" rel="author" href="https://thatguyjack.co.uk/humans.txt" /> 
 <link rel="stylesheet" href="https://hotbeans.net/css/style.css"/>
 <link rel="stylesheet" media="screen and (max-width: 900px)" href="https://hotbeans.net/css/800style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="https://hotbeans.net/js/tsparticles.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

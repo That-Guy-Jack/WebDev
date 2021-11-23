@@ -19,6 +19,11 @@ body, html {
   background-image: linear-gradient(to top left, #0640ff, #2d68d5);
 }
 
+.mnav .nav-logo{
+  float:left;
+  width:70px;
+}
+
 .content {
   position: absolute;
   margin-top: 15%;
@@ -153,6 +158,49 @@ body, html {
   float:left;
   width:100px;
 }
+
+.mnav{
+  opacity: 0;
+  animation: fadeInAnimation 1.8s ease 1.3s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  position: absolute;
+  background-image: linear-gradient(to top left, #0640ff, #2d68d5);
+  width: 100%;
+  top: 0px;
+  text-align: center;
+  padding: 1px;
+  border-bottom: 2px solid black;
+  z-index: 10;
+}
+
+.mnav a{
+  transition-duration: 0.2s;
+  color: black;
+  border:2px solid black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-left:2px;
+  margin-right: 2px;
+  cursor:pointer;
+}
+
+.mnav a:hover{
+  transition-duration: 0.2s;
+  transform: scale(1.1);
+  background-color: black;
+  color:#D5AB2D;
+  border: 2px solid black;
+}
+.mnav a:active{
+  transform: translatey(0px);
+  color:white;
+}
+
+
 
 @keyframes fadeInAnimation {
   0% {
