@@ -56,10 +56,12 @@
 <?php require_once "../nav.php";?>
   <div class="content">
       <div class="header">
-        <h1> Welcome to the Mailing List!</h1>
-
-        <p>Place your email below to get up to date infomation about our developers!  </p>
+        <h1>Get in Touch!</h1>
+        <p>Sign up to our Mailing list or do you need support with your account? You've come to the correct Place!</p>
       </div>
+      <br>
+      <hr>
+        <h2>Sign up to our mailing list!</h2>
         <form action="../mail.php" method="post">
             <div class="form-group">
                 <input type="email" name="email"  placeholder="Enter Your Email Here" style="padding:15px 20px;font-size: 17px;margin:3px" class="content-box-login" class="form-control"></input>
@@ -69,6 +71,10 @@
                 <input style="padding:15px 20px;font-size: 17px;margin:3px" class="content-button" type="submit" value="Submit" style="padding:15px 20px;font-size: 17px;margin:3px" class="content-button">
             </div>
         </form>
+        <br>
+        <hr>
+        <h2>Need Support? or Your account activating?</h2>
+        <p>Send us an <a href="mailto:support@hotbeans.net" target="_blank">Email (support@hotbeans.net)</a> and we will get you sorted!</p>
   </div>
   </div>
   <div id="background"></div>

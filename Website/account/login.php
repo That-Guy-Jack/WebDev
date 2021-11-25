@@ -35,7 +35,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        $sql = "SELECT id, username, password FROM users WHERE active = '1' AND username = ?";
         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -70,8 +70,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         }
                     }
                 } else{
-                    // Username doesn't exist, display a generic error message
-                    $login_err = "Invalid username or password.";
+                    // Username  doesn't exist or account is not active, display a generic error message
+                    $login_err = "Inactive account, Incorrect username/password see contact us page for help";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
