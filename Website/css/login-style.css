@@ -58,7 +58,6 @@ video {
     transition-duration: 0.2s;
     outline:none;
 }
-
 .content-box-login { 
     opacity: 0;
     width:30%;
@@ -224,7 +223,15 @@ video {
     border: 4px solid black;
     outline:none;
 }
-
+.content-email:link {
+    color: #FFFFFF;
+}
+.content-email:visited {
+    color: #dbdbdb;
+}
+.content-email:hover {
+    color: #008000;
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;

@@ -74,7 +74,7 @@
         <br>
         <hr>
         <h2>Need Support? or Your account activating?</h2>
-        <p>Send us an <a href="mailto:support@hotbeans.net" target="_blank">Email (support@hotbeans.net)</a> and we will get you sorted!</p>
+        <p>Send us an <a class="content-email" href="mailto:support@hotbeans.net" target="_blank">Email (support@hotbeans.net)</a> and we will get you sorted!</p>
   </div>
   </div>
   <div id="background"></div>

@@ -31,7 +31,7 @@
   <div class="content">
       <div class="header">
         <h1> Welcome to HotBeans Development!</h1>
-        <p>Check Out Some Courses!</p>
+        <p>Check Out Some Courses Above!</p>
       </div>
   </div>
 </div>
