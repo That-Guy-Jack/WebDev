@@ -98,7 +98,7 @@
             <ul>
             <li>You must be able to code well</li>
             <li>You must be able to work at like 2am super well and stuff</li>
-            <li>You must </li>
+            <li>Requires a Degree in Computer science or another computing based subject</li>
             </ul>
 				  </section>
 			  </article>
@@ -113,6 +113,7 @@
               <li>You must be able to make the worst cups of tea possible</li>
               <li>You must be able to turn up 30mins late when you live 5mins round the corner and blame it on the traffic</li>
               <li>You must be able to procrastonate all work but somehow get a raise</li>
+              <li>Requires a Degree in Computer science or another computing based subject</il>
             </ul>
 				  </section>
 			  </article>
