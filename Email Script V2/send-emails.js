@@ -8,7 +8,7 @@ let transporter = nodemailer.createTransport({
     secure: false, // use TLS
     auth: {
       user: "admin@hotbeans.net",
-      pass: "EgOrticH,%,95",
+      pass: "GtoNegONYLAteRShRoHnAllIocLOUsto,12,%",
     },
     tls: {
         ciphers:'SSLv3'

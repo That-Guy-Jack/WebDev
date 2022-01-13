@@ -26,7 +26,7 @@ if (is_mobile()) {
 			<a href="https://hotbeans.net/portfolios">Portfolios</a>
 			<a href="https://hotbeans.net/contact-us">Contact Us</a>
 			<a href="https://hotbeans.net/apply">Apply</a>
-			<a class="nav-login" href="https://hotbeans.net/account">Login</a>
+			<a class="nav-login" href="https://hotbeans.net/account">Login/Register</a>
 		  </div>';
 		} else {
 			echo '
@@ -37,7 +37,7 @@ if (is_mobile()) {
 			<a href="https://hotbeans.net/portfolios">Portfolios</a>
 			<a href="https://hotbeans.net/contact-us">Contact Us</a>
 			<a href="https://hotbeans.net/apply">Apply</a>
-			<a class="nav-login" href="https://hotbeans.net/account">Login</a>
+			<a class="nav-login" href="https://hotbeans.net/account">Login/Register</a>
 		  </div>';
 		}	
 ?>

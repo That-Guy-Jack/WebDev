@@ -80,10 +80,10 @@
 				  <section>
 				    <h2>Places to learn!</h2>
             <ul>
-            <li><a href="https://www.w3schools.com/">W3shcools</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">Mozilla Docs</a></li>
-            <li><a href="https://stackoverflow.com/">StackOverflow</a></li>
-            <li><a href="https://github.com/">Github</a></li>
+            <li><a class="content-email" href="https://www.w3schools.com/">W3shcools</a></li>
+            <li><a class="content-email" href="https://developer.mozilla.org/en-US/docs/Web/HTTP">Mozilla Docs</a></li>
+            <li><a class="content-email" href="https://stackoverflow.com/">StackOverflow</a></li>
+            <li><a class="content-email" href="https://github.com/">Github</a></li>
             </ul>
 
 				  </section>
@@ -104,21 +104,6 @@
 			  </article>
         <br>
 				<hr>
-				<article>
-				  <section>
-				    <h2>Principle Idiot</h2>
-				    <h1>Apply by 69th of July 2022</h1>
-            <p>Requirements</p> 
-            <ul>
-              <li>You must be able to make the worst cups of tea possible</li>
-              <li>You must be able to turn up 30mins late when you live 5mins round the corner and blame it on the traffic</li>
-              <li>You must be able to procrastonate all work but somehow get a raise</li>
-              <li>Requires a Degree in Computer science or another computing based subject</il>
-            </ul>
-				  </section>
-			  </article>
-        <br>
-        <hr>
   </div>
   </div>
   <div id="background"></div>
