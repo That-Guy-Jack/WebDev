@@ -34,7 +34,13 @@
       <article>
 				  <section>
             <p>Hotbeans.net are dedicated to making the most beans themed websites known to man. With many projects being beanified. We endevour to make sure no site gets left unbeanified.</p>
-            <o>We also are obligated to have the cheapest known to man teabags that no one drinks</p>
+            <p>We offer free site beanification and have completed many projects for clients, including:</p>
+            <ul>
+            <li><a class="content-email" href="https://thatguyjack.co.uk/">ThatGuyJack.co.uk</a></li>
+            <li><a class="content-email" href="https://hugoswitt.co.uk/">Hugoswitt.co.uk</a></li>
+            <li><a class="content-email" href="https://andiissuper.cool/">Andiissuper.cool</a></li>
+            </ul>
+            <p>and many more!</p>
           </section>
 			  </article>
   </div>

@@ -107,7 +107,15 @@ body, html {
   color:#ffffff;
   border: 2px solid black;
 }
-
+.content-email:link {
+  color: #FFFFFF;
+}
+.content-email:visited {
+  color: #dbdbdb;
+}
+.content-email:hover {
+  color: #008000;
+}
 .nav {
   opacity: 0;
   animation: fadeInAnimation 1.8s ease 1.3s;

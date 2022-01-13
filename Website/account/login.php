@@ -71,7 +71,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     }
                 } else{
                     // Username  doesn't exist or account is not active, display a generic error message
-                    $login_err = "Inactive account, Incorrect username/password see contact us page for help";
+                    $login_err = "Inactive account, Incorrect username/password see contact us page for help! (account may not be activated)";
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
