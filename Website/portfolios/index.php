@@ -5,7 +5,7 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 
-$servername = "db.thatguyjack.co.uk";
+$servername = "192.168.5.16";
 $username = "webdev";
 $password = "webdev32145";
 $dbname = "webdev_db";
