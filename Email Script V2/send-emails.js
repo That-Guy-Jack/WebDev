@@ -3,16 +3,19 @@ var handlebars = require("handlebars");
 var fs = require("fs");
 let transporter = nodemailer.createTransport({
     pool: true,
-    host: "mail.privateemail.com",
+    host: "mail.thatguyjack.me",
     port: 587,
     secure: false, // use TLS
     auth: {
-      user: "Jack@thatguyjack.co.uk",
-      pass: "Jack32145@",
+      user: "admin@hotbeans.net",
+      pass: "EgOrticH,%,95",
     },
+    tls: {
+        ciphers:'SSLv3'
+    }
   });
   
-var prefix = "/home/ubuntu/webdev-email-v2/"
+var prefix = "/home/jack/webdev-email-v2/"
   
 var readHTMLFile = function(path, callback) {
     fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
@@ -35,7 +38,7 @@ var mailOptions = {
 var mysql = require('mysql');
 //const distance = require('distance.js');
 var con = mysql.createConnection({
-  	host: "db.thatguyjack.co.uk",
+  	host: "192.168.5.16",
   	user: "webdev",
 	password: "webdev32145",
 	database: "webdev_db"
@@ -88,7 +91,7 @@ function check(){
 
                         htmlToSend = template(replacements);
                         var mailOptions = {
-                            from: 'hotbeans-net-no-reply@thatguyjack.co.uk',
+                            from: 'no-reply@hotbeans.net',
                             to: row["user_email"],
                             subject: 'HotBeans.net! Welcome Email!',
                             html: htmlToSend
