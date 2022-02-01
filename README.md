@@ -1,5 +1,5 @@
 # WebDev
-Jacks WebDev Project For IT BTEC at ASFC
+Jacks WebDev Project For IT BTEC
 
 Currently hosted at https://hotbeans.net
 
